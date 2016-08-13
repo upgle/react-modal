@@ -62,5 +62,14 @@
     "react-component",
     "modal",
     "dialog"
-  ]
+  ],
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "browserify-shim": {
+    "react": "global:React",
+    "react-dom": "global:ReactDOM"
+  }
 }
